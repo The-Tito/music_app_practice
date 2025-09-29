@@ -1,44 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./styles.css" />
     <script type="module" src="./main.js"></script>
-</head>
-<body>
-    <div class="container">
-        <div class="music-player">
-            <nav>
-                <div class="circle">
-                    <span>back</span>
-                </div>
-                <div class="circle">
-                    <span>bars</span>
-                </div>
-            </nav>
-
-            <div id="song-details">
-                <img src="./media/default_img.jpg" alt="" id="song-img">
-                <h1 id="title"></h1>
-                <h3 id="artist"></h3>
+  </head>
+  <body>
+    <section class="musicPlayer-Section">
+      <div
+        class="musicPlayer-Section__playlist"
+      >
+        <ul>
+          <li class="playlist-element">
+            <span class="playlist-element__photo" aria-hidden="true"></span>
+            <div class="playlist-element__content-info">
+              <p class="playlist-element__title">IMH</p>
+              <p class="playlist-element__autor">V.I.M</p>
             </div>
-
-            <div class="audio">
-                <audio controls id="media" hidden>
-                    <!--<source id="audio" src="" type="audio/mpeg">-->
-                </audio>
-                <input type="range" value="0" id="progress">
+            <p class="playlist-element__time">3:45</p>
+          </li>
+          <li class="playlist-element">
+            <span class="playlist-element__photo" aria-hidden="true"></span>
+            <div class="playlist-element__content-info">
+              <p class="playlist-element__title">IMH</p>
+              <p class="playlist-element__autor">V.I.M</p>
             </div>
-
-            <div class="song-controls">
-                <span id="lastest">last</span>
-                <span id="play" class="play">play</span>
-                <span id="forward">forward</span>
+            <p class="playlist-element__time">3:45</p>
+          </li>
+          <li class="playlist-element">
+            <span class="playlist-element__photo" aria-hidden="true"></span>
+            <div class="playlist-element__content-info">
+              <p class="playlist-element__title">IMH</p>
+              <p class="playlist-element__autor">V.I.M</p>
             </div>
-
-        </div>
-    </div>
-</body>
+            <p class="playlist-element__time">3:45</p>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="musicPlayer-Section__main"
+        style="background-color: black"
+      ></div>
+      <div
+        class="musicPlayer-Section__disc"
+        style="background-color: yellow"
+      ></div>
+    </section>
+  </body>
 </html>
