@@ -96,5 +96,8 @@ html {
   border-radius: 26px 26px 0px 0px;
   width: 100%;
   height: 10vh;
-  background-color: #FAF8F6;
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
 }

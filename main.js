@@ -28,11 +28,11 @@ const songs = [
         },
     ];
 
-const last = [];
+
 
 const playlist = createPlaylist(songs.length);
 
-let playingNow;
+
 
 window.addEventListener('DOMContentLoaded', () => {
     playingNow = playlist.pop()
