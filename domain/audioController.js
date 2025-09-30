@@ -1,14 +1,15 @@
 
 
 export default{
-    AudioController(playlist){
+    AudioController(playlist, audioInnerHtml){
         this._nextSong = playlist;
         this._actualSong = this._nextSong.pop();
+        this._controller = audioInnerHtml;
     },
     _lastSong: [],
     _nextSong: [],
     _actualSong: null,
-    _controller: document.getElementById("media"),
+    _controller:null,
     nextSong(){
         if(this._nextSong.length !== 0){
             this._lastSong.push(this._actualSong);
